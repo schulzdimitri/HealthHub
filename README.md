@@ -113,6 +113,11 @@ Para ambientes corporativos, recomenda-se sobrescrever via variáveis de ambient
 
 ## Database & Migrations
 
+### Database Entity-Relationship (DER)
+
+<img width="3528" height="3524" alt="image" src="https://github.com/user-attachments/assets/c568d801-a55f-446e-a92c-01531f9df81e" />
+
+
 - Scripts vivem em `src/main/resources/db/migration` seguindo o padrão `V<versão>__<descrição>.sql`.
 - `V1__create-users-table.sql` cria a tabela `users` e habilita a extensão `pgcrypto`.
 - Execute `./mvnw flyway:info` para auditar o estado das migrations.
